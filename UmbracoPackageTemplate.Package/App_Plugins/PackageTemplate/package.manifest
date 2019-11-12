@@ -1,0 +1,26 @@
+{
+    propertyEditors: [{
+        alias: 'PackageTemplate',
+        name: 'My Package Template',
+        icon: 'icon-truck',
+        group: 'media',
+        editor: {
+            view: '~/App_Plugins/PackageTemplate/PackageTemplate.html'
+        },
+		prevalues:	{
+			fields: [{
+					label: "Test Prevalue",
+					description: "This is a test prevalue",
+					key: "somekey",
+					view: "textstring"
+				}
+			]
+		}
+    }],
+    javascript: [
+        '~/App_Plugins/PackageTemplate/js/PackageTemplate.controller.js'
+    ],
+    css: [
+        '~/App_Plugins/PackageTemplate/css/PackageTemplate.css'
+    ]
+}
